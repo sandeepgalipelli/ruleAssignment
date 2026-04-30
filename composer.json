@@ -1,0 +1,39 @@
+{
+    "name": "rule-assignment/app",
+    "description": "Rule assignment MVC app with Pest tests",
+    "type": "project",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.36"
+    },
+    "autoload": {
+        "classmap": [
+            "Controllers/",
+            "Models/",
+            "Repositories/",
+            "Services/",
+            "Utils/"
+        ],
+        "files": [
+            "config/database.php"
+        ]
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+
